@@ -1,0 +1,131 @@
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position:relative;
+}
+.left-sidebar{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7c, #23a6d5, #23d5ab);
+    color: #fff;
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+.left-col{
+    flex-basis: 40%;
+}
+.right-col{
+    flex-basis: 55%;
+}
+.left-col img{
+    width: 80%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.left-col img:hover{
+    filter: grayscale(1);
+}
+.right-col h1{
+    font-size: 44px;
+    font-weight: 600;
+}
+.right-col p{
+    color: #777;
+    margin: 20px 0 70px;
+}
+.social-media{
+    display: flex;
+    margin-top: 30px;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7c, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: change 10s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+@keyframes change{
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.icon img{
+    width: 35px;
+}
+.icon:hover{
+    transform: translateY(-5px);
+}
+
+.email{
+    width: 300px;
+    height: 70px;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7c, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: change 10s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+@keyframes change{
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.email:hover{
+    transform: translateY(-5px);
+}
+
